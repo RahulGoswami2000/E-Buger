@@ -33,8 +33,6 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
-                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
-                    <warName>trial</warName>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
