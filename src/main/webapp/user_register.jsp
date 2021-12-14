@@ -22,7 +22,7 @@ String Username=request.getParameter("uname");
 String Password=request.getParameter("Pswd");
 	try{
 		
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/e-buger","root","$712000Rahul");
 		String sql1 = "select * from user where username = ?";
 	PreparedStatement ps1 = con.prepareStatement(sql1);
@@ -55,7 +55,7 @@ String Password=request.getParameter("Pswd");
 	            System.out.println("Data not accepted");
 	        }
 			ServletContext sc = getServletContext();
-			sc.getRequestDispatcher("/bug_form.html").forward(request,response);     
+			sc.getRequestDispatcher("/index.html").forward(request,response);     
 		}
 	}
 	catch(Exception e){

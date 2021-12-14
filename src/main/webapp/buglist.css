@@ -4,9 +4,10 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 19 Aug, 2021, 10:18:37 AM
+    Created on : 2 Nov, 2021, 10:13:01 PM
     Author     : ACER
 */
+
 
 
 body {
@@ -26,7 +27,7 @@ body {
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
-  height: 139vh;
+  height: 130vh;
   width: 100%;
   overflow: hidden;
   padding:0;
@@ -109,7 +110,7 @@ nav ul li:hover{
   padding-top: 25px;
   padding-right:15px;
   margin-top: -30px;
- background: #EFEEF5;
+  background: #EFEEF5;
   text-decoration: none;
   opacity:.7;
   /*transform: skew(15deg);*/
@@ -168,11 +169,11 @@ a:visited {
 .header-content button:hover{
   border-radius: 0;
 }
-.login-box
+/*.login-box
 	{
 		width:280px;
 		position:absolute;
-		top:80%;
+		top:69%;
 		left:50%;
 		transform: translate(-50%,-50%);
 		color:#282C35;
@@ -238,7 +239,23 @@ input[type="file"] {
 			 cursor: pointer;
 			 border-radius: 19px;
 			 background-image: linear-gradient(to right, #a8edea,#fed6e3);
-		 }
+		 }*/
+.table{
+                position:absolute;
+		top:17%;
+                width: 95%;
+                left:2.5%;
+}
+h1
+	 {
+		 margin: 0; 
+		 font-size:38px;
+		 margin-bottom: 40px;
+		 padding:0 0 20px;
+                 color: #EFEEF5;
+		 text-align:center;
+                 font-family: Rockwell;
+	 }
 @keyframes ani9 {
     0% {
         transform: translateY(3px);
@@ -267,71 +284,5 @@ input[type="file"] {
   to {
     transform: scale(20) rotate(960deg) translate(-50%, -50%);
     opacity: 0;
-  }
-}
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background: linear-gradient(132deg, #a8edea,#D6DBDF,#fed6e3);
-  animation: Gradient 15s ease infinite;
-/*  background-color: rgb(0,0,0 );
-  background-color: rgba(52, 73, 94, 0.9);*/
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-.h2{
-     margin: 0; 
-     float:left;
-     font-size:38px;
-/*     border-bottom: 6px solid #282C35;*/
-     margin-bottom: 40px;
-     padding:0 0 20px;
-     text-align:center;
-     width:280px;
-     position:absolute;
-     top:20%;
-     left:6%;
-     transform: translate(-50%,-50%);
-     color:#282C35;
-}
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
   }
 }

@@ -31,7 +31,7 @@
 			System.out.println("StaffID and password Match!");
 			session.setAttribute("user",Username);
 			ServletContext sc = getServletContext();
-			sc.getRequestDispatcher("/index.html").forward(request,response);
+			sc.getRequestDispatcher("/stafflanding.html").forward(request,response);
 		}
 		else{
 			JFrame parent = new JFrame(); 

@@ -9,14 +9,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>User Login</title>
 </head>
 <body>
 	<%
-		String username=(String)session.getAttribute("uname");
 		String Username=request.getParameter("uname");
+                session.setAttribute("uname1",Username);
 		String Password=request.getParameter("Pswd");
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/e-buger","root","$712000Rahul");
 		String sql="select username,password from user where username=? and password=?";
 		PreparedStatement ps = con.prepareStatement(sql);
@@ -31,7 +31,7 @@
 			System.out.println("Username and password Match!");
 			session.setAttribute("user",Username);
 			ServletContext sc = getServletContext();
-			sc.getRequestDispatcher("/bug_form.html").forward(request,response);
+			sc.getRequestDispatcher("/userlanding.html").forward(request,response);
 		}
 		else{
 			JFrame parent = new JFrame(); 

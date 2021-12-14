@@ -8,19 +8,20 @@
 <body>
 	<%
             try{
+                String userid=request.getParameter("userid");
 		String firstname=request.getParameter("fname");
 		String lastname=request.getParameter("lname");
 		String email=request.getParameter("Email");
                 String company=request.getParameter("webname");
                 String url=request.getParameter("url");
                 String descrip=request.getParameter("descrip");
-                String image=request.getParameter("img");
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/e-buger","root","$712000Rahul");
 		Statement st=con.createStatement();
-                int i=st.executeUpdate("insert into userbug(firstname,lastname,email,company,url,description,image)values('"+firstname+"','"+lastname+"','"+email+"','"+company+"','"+url+"','"+descrip+"','"+image+"')");
+                int i=st.executeUpdate("insert into userbug(userid,firstname,lastname,email,company,url,description)values('"+userid+"','"+firstname+"','"+lastname+"','"+email+"','"+company+"','"+url+"','"+descrip+"')");
+                int j=st.executeUpdate("insert into totalbug(userid,firstname,lastname,email,company,url,description)values('"+userid+"','"+firstname+"','"+lastname+"','"+email+"','"+company+"','"+url+"','"+descrip+"')");
                 ServletContext sc = getServletContext();
-		sc.getRequestDispatcher("/index.html").forward(request,response);
+		sc.getRequestDispatcher("/userlanding.html").forward(request,response);
                 System.out.println("Data is successfully inserted!");
                 }
                 catch(Exception e)

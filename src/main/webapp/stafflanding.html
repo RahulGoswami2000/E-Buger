@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home Page</title>
-<link rel="stylesheet"  href="alllogin.css"/>
+<title>Staff Home</title>
+<link rel="stylesheet"  href="landingcss.css"/>
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <style> -->
 <!-- body -->
 <!-- { -->
@@ -26,7 +27,7 @@
 <!-- <header> -->
 		<!-- <div class="header"> -->
 			<!-- <a href="index.html"><h2 id="Name">E-Buger</h2></a> -->
-			<!-- <a href="#Sign Up" class="links">Sign up</a> -->
+<!--			 <a href="#Sign Up" class="links">Sign up</a>-->
 			<!-- <a href="#Log In" class="links">Log In</a> -->
 		<!-- </div> -->
 	<!-- </header> -->
@@ -44,27 +45,29 @@
 <!-- navbar -->
      <nav>
         <ul>
-           <li><a href="signup_land.html">Sign Up</a></li>
-<!--            <li><a href="login_land.html">Login</a></li>-->
-<!--                <li><a href="#logout">Logout</a></li>-->
+           <li><a href="logout.jsp">Log Out</a></li>
+<!--            <li><a href="#">Login</a></li>-->
          </ul>
        </nav>
 <!-- logo -->
 <div class="logo"><span><a href="index.html">E-Buger</a></span></div>
 <!-- title & content -->
+      <section class="header-content">
+       <h1>Welcome</h1>
+        <p>"Did anyone reported a bug in a System?"</p>
+        <p>Find a Bug-List mate!</p>
+        <p></p>
+        <br>
+        <p>Made in India with <span style="font-size:100%;color:#FFA07A;">&#10084;</span></p>
+        <a href="https://github.com/RahulGoswami2000"><i class="fa fa-github" style="font-size:36px; color:#EFEEF5"></i></a>
+        <a href="https://www.linkedin.com/in/rahulgoswami2000/"><i class="fa fa-linkedin-square" style="font-size:36px; color:#EFEEF5"></i></a> 
+      </section>
   </header>
-	<div class="login-box">
-<form action="admin_login.jsp" method="post">
-	<h1>Fill up the Details</h1>
-            <p><b>AdminID</b></p>
-            <input type="text" class="textarea" id="uname" name="uname" placeholder="Username" style="width:100%;" required >
-            <p><b>Password</b></p>
-            <input type="password" class="textarea" id="pass" name="Pswd" placeholder="Password" style="width:100%;" required>	
-            <input type="submit" name="submit" id="submit" class="button" value="Submit">
-							
-        </form>
-		
-    </div>    
+<div> 
+    <a href="staffbugretrive.jsp" class="button">Bug List</a>
+    <a href="acceptedbuglist.jsp" class="button1">Accepted</a>
+    <a href="rejectedbuglist.jsp" class="button2">Rejected</a>
+</div>
 </div>
 </body>
 </html>

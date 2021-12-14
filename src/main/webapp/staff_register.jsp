@@ -23,10 +23,10 @@ String Username=request.getParameter("uname");
 String Password=request.getParameter("Pswd");
 	try{
 		
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/e-buger","root","$712000Rahul");
 		String sql1 = "select * from staff where staffid = ?";
-	PreparedStatement ps1 = con.prepareStatement(sql1);
+                PreparedStatement ps1 = con.prepareStatement(sql1);
 		ps1.setString(1, Username);
 		ResultSet rs = ps1.executeQuery();
 		if(rs.next())
@@ -35,7 +35,7 @@ String Password=request.getParameter("Pswd");
 			JOptionPane.showMessageDialog(parent, "Staff ID already exist. Use different Staff ID.");
 			System.out.println("Staff ID already exist. Use different Staff ID.");
 			ServletContext sc = getServletContext();
-			sc.getRequestDispatcher("/admin_signup.html").forward(request,response);
+			sc.getRequestDispatcher("/staff_signup.html").forward(request,response);
 			
 		}
 		else
@@ -52,6 +52,8 @@ String Password=request.getParameter("Pswd");
                         int i=ps.executeUpdate();
 			if (i > 0) {
 	            System.out.println("User Registered!!!!"); 
+                    ServletContext sc = getServletContext();
+                    sc.getRequestDispatcher("/stafflanding.html").forward(request,response);
 	        } else {
 	            System.out.println("Data not accepted");
 	        }
