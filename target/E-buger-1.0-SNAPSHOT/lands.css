@@ -4,6 +4,16 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : 15 Dec, 2021, 8:42:50 AM
+    Author     : ACER
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : 19 Aug, 2021, 10:18:37 AM
     Author     : ACER
 */
@@ -22,7 +32,7 @@ body {
 }
 /* ============= Animation background ========= */
 .background {
-  background: linear-gradient(132deg, #4DA0B0,#D39D38);
+  background: linear-gradient(132deg, #a8edea,#a43931,#fed6e3 );
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
@@ -167,7 +177,7 @@ a:visited {
 .header-content button:hover{
   border-radius: 0;
 }
-/*.button{
+.button{
   text-transform:uppercase;
   width:150px;
   text-align:center;
@@ -210,8 +220,8 @@ a:visited {
   width: 170px;
   color:whitesmoke;
   background: linear-gradient(132deg,#f4e2d8,#808080, #3fada8);
-  animation: Gradient 15s ease infinite;*/
-/*}*/
+  animation: Gradient 15s ease infinite;
+}
 /* Animate Background*/
 @keyframes Gradient {
   0% {
@@ -234,7 +244,7 @@ a:visited {
     opacity: 0;
   }
 }
-.overlay {
+/*.overlay {
   height: 0%;
   width: 100%;
   position: fixed;
@@ -243,8 +253,8 @@ a:visited {
   left: 0;
   background: linear-gradient(132deg, #4DA0B0,#D39D38);
   animation: Gradient 15s ease infinite;
-/*  background-color: rgb(0,0,0 );
-  background-color: rgba(52, 73, 94, 0.9);*/
+  background-color: rgb(0,0,0 );
+  background-color: rgba(52, 73, 94, 0.9);
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -260,7 +270,7 @@ a:visited {
      margin: 0; 
      float:left;
      font-size:38px;
-/*     border-bottom: 6px solid #282C35;*/
+     border-bottom: 6px solid #282C35;
      margin-bottom: 40px;
      padding:0 0 20px;
      text-align:center;
@@ -299,4 +309,4 @@ a:visited {
   top: 15px;
   right: 35px;
   }
-}
+}*/

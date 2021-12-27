@@ -22,11 +22,11 @@ body {
 }
 /* ============= Animation background ========= */
 .background {
-  background: linear-gradient(132deg, #4DA0B0,#D39D38);
+  background: linear-gradient(132deg, #6495ED, #5F9EA0, #212335);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   overflow: hidden;
   padding:0;
@@ -102,7 +102,7 @@ nav ul li a{
 }
 nav ul li:hover a{
   text-decoration: none;
-  color: #591BC5;
+  color: #591BC5;;
 }
 nav ul li:hover{
   height: 45px;
@@ -111,6 +111,7 @@ nav ul li:hover{
   margin-top: -30px;
  background: #EFEEF5;
   text-decoration: none;
+  opacity:.7;
   /*transform: skew(15deg);*/
 }
 /* Logo */
@@ -167,51 +168,6 @@ a:visited {
 .header-content button:hover{
   border-radius: 0;
 }
-/*.button{
-  text-transform:uppercase;
-  width:150px;
-  text-align:center;
-  line-height:50px;
-  position:absolute;
-  left:0;right:60%;top:50%;
-  margin:auto;
-  transform:translateY(-50%);
-  height: 50px;
-  width: 170px;
-  color:whitesmoke;
-  background: linear-gradient(132deg,#f4e2d8,#808080, #3fada8);
-  animation: Gradient 15s ease infinite;
-}
-.button1{
-  text-transform:uppercase;
-  width:150px;
-  text-align:center;
-  line-height:50px;
-  position:absolute;
-  left:0;right:0;top:50%;
-  margin:auto;
-  transform:translateY(-50%);
-  height: 50px;
-  width: 170px;
-  color:whitesmoke;
-  background: linear-gradient(132deg,#f4e2d8,#808080, #3fada8);
-  animation: Gradient 15s ease infinite;
-}
-.button2{
-  text-transform:uppercase;
-  width:150px;
-  text-align:center;
-  line-height:50px;
-  position:absolute;
-  left:63%;right:0;top:50%;
-  margin:auto;
-  transform:translateY(-50%);
-  height: 50px;
-  width: 170px;
-  color:whitesmoke;
-  background: linear-gradient(132deg,#f4e2d8,#808080, #3fada8);
-  animation: Gradient 15s ease infinite;*/
-/*}*/
 /* Animate Background*/
 @keyframes Gradient {
   0% {
@@ -232,71 +188,5 @@ a:visited {
   to {
     transform: scale(20) rotate(960deg) translate(-50%, -50%);
     opacity: 0;
-  }
-}
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background: linear-gradient(132deg, #4DA0B0,#D39D38);
-  animation: Gradient 15s ease infinite;
-/*  background-color: rgb(0,0,0 );
-  background-color: rgba(52, 73, 94, 0.9);*/
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-.h2{
-     margin: 0; 
-     float:left;
-     font-size:38px;
-/*     border-bottom: 6px solid #282C35;*/
-     margin-bottom: 40px;
-     padding:0 0 20px;
-     text-align:center;
-     width:280px;
-     position:absolute;
-     top:20%;
-     left:6%;
-     transform: translate(-50%,-50%);
-     color:#282C35;
-}
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
   }
 }

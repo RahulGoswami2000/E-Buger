@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home Page</title>
-<link rel="stylesheet"  href="lands.css"/>
+<link rel="stylesheet"  href="allisignup.css"/>
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 <!-- <style> -->
 <!-- body -->
@@ -26,7 +25,7 @@
 <!-- <header> -->
 		<!-- <div class="header"> -->
 			<!-- <a href="index.html"><h2 id="Name">E-Buger</h2></a> -->
-<!--			 <a href="#Sign Up" class="links">Sign up</a>-->
+			<!-- <a href="#Sign Up" class="links">Sign up</a> -->
 			<!-- <a href="#Log In" class="links">Log In</a> -->
 		<!-- </div> -->
 	<!-- </header> -->
@@ -44,22 +43,32 @@
 <!-- navbar -->
      <nav>
         <ul>
-           <li><a href="signup_land.html">Sign Up</a></li>
-<!--            <li><a href="#">Login</a></li>-->
+<!--           <li><a href="signup_land.html">Sign Up</a></li>-->
+            <li><a href="login_land.html">Login</a></li>
+<!--                <li><a href="#logout">Logout</a></li>-->
          </ul>
        </nav>
 <!-- logo -->
 <div class="logo"><span><a href="index.html">E-Buger</a></span></div>
 <!-- title & content -->
-      <section class="header-content">
-        
-      </section>
   </header>
-<div> 
-    <a href="staff_login.html" class="button">STAFF</a>
-    <a href="user_login.html" class="button1">USER</a>
-    <a href="admin_login.html" class="button2">ADMIN</a>
-</div>
+	<div class="login-box">
+<form action="user_register.jsp" method="post">
+                        <h1>Fill up the Details</h1>
+			<p><b>Firstname:</b></p>
+			<input type="text" name="fname">
+			<p><b>Lastname:</b></p>
+			<input type="text" name="lname">
+			<p><b>Phone:</b></p>
+			<input type="text" name="Phone" pattern="[0-9]{10}" title="10 Digits required" required>
+			<p><b>Email:</b></p>
+			<input type="email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Ex: a@gmail.com" required>
+			<p><b>AdminID:</b></p>
+                        <input type="text" name="uname" pattern="[A-Za-z0-9]{6}" title="Combination of 6 Alphanumeric required " required>
+			<p><b>Password:</b></p>
+			<input type="password" name="Pswd" pattern="[A-Za-z0-9]{6,}" title="Minimum 6 letters required" required>
+			<input type="submit" value="Submit" class="button">
+</form>
+            </div>
 </div>
 </body>
-</html>
